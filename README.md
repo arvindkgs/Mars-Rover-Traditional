@@ -1,3 +1,5 @@
+# Mars Rover OOP
+
 This is a simple problem that I solved in Kotlin using traditional OOP.
 
 A squad of robotic rovers are to be landed by NASA on a plateau on Mars. This plateau, which is curiously rectangular, must be navigated by the rovers so that their on-board cameras can get a complete view of the surrounding terrain to send back to Earth.
@@ -33,7 +35,7 @@ Example:
 
 
 Input:
-
+```
 5 5
 
 1 2 N
@@ -42,14 +44,21 @@ LMLMLMLMM
 
 3 3 E
 
-MMRMMRMRRM
-
+MMRMMRMRRM 
+```
 
 
 Expected Output:
 
+```
 1 3 N
 
 5 1 E
+```
 
-I have created three
+I have created 4 classes.
+
+1. Main.kt - Instantiates and executes the test
+2. Plateau.kt - Enable movement through grid
+3. Rover.kt - Autonomous bot that takes inital position and set of instructions and moves through the grid
+4. Point.kt - Maintains position and provides neighbour information
